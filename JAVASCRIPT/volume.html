@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="volume.css">
+    <link rel="stylesheet" href="volume2.css" media="screen and (max-width:48rem)">
+</head>
+<body>
+    <div class="cima">
+        <div class="figura">
+            <div class="figuras" onclick="CUBO()">
+                <div class="imagem">
+                    <img src="img/cubo.png" alt="">
+                </div>
+                <h1 class="texto">CUBO</h1>
+                <h3 id="cuba"></h3>
+            </div>
+            <div class="figuras" onclick="PARA()">
+                <div class="imagem">
+                <img src="img/ParalelepipedoVol.png" alt="">
+                </div>
+                <h1 class="texto">PARALELEPIPEDO</h1>
+                <h3 id="pipeno"></h3>
+            </div>
+            <div class="figuras" onclick="PIRA()">
+                <div class="imagem">
+                    <div class="piramide">
+                        <img src="img/PyramidVol.png" alt="">
+                    </div>
+                    
+                </div>
+                <h1 class="texto">PIRÂMIDE</h1>
+                <h3 id="egito"></h3>
+            </div>
+            <div class="figuras" onclick="CIRILO()">
+                <div class="imagem">
+                    <div class="cilindro">
+                        <img src="img/cilindro-1.png" alt="">
+                    </div>
+                    
+                </div>
+                <h1 class="texto">CILINDRO</h1>
+                <h3 id="lindo"></h3>
+            </div>
+            <div class="figuras" onclick="PRIMA()">
+                <div class="imagem">
+                   <div class="prisma">
+                    <img src="img/prisma.png" alt="">
+                   </div> 
+                </div>
+                <h1 class="texto">PRISMA</h1>
+                <h3 id="simas"></h3>
+            </div>
+    </div>
+        
+    </div>
+    <script>
+        function CUBO(){
+            let a=Number(prompt("Insira o comprimento da base 'metros'"));
+            let b=Number(prompt("insira a largura da base 'metros'"));
+            let c=Number(prompt("Insira a altura do solido 'metros'"));
+            let res=a*b*c;
+            alert("O volume do seu cubo é "+res+"m³")
+            document.getElementById('cuba').innerHTML="seu cubo vale "+res+"m³"
+            
+        }
+        function PARA(){
+            let d=Number(prompt("Insira o comprimento da base 'metros'"));
+            let e=Number(prompt("insira a largura da base 'metros'"));
+            let f=Number(prompt("Insira a altura do solido 'metros'"));
+            let res=d*e*f;
+            alert("O volume do seu paralelepipedo é "+res+"m³")
+            document.getElementById('pipeno').innerHTML="seu paralelepipedo vale "+res+"m³"
+        }
+        function PIRA(){
+            let d=Number(prompt("Insira o comprimento da base 'metros'"));
+            let e=Number(prompt("insira a largura da base 'metros'"));
+            let f=Number(prompt("Insira a altura do solido 'metros'"));
+            let res=d*e*f;
+            let x= res/3
+            alert("O volume da sua piramide é "+x+"m³")
+            document.getElementById('egito').innerHTML="sua piramide vale "+x+"m³"
+        }
+        function CIRILO(){
+            let r=Number(prompt("Insira o raio da circunferencia 'metros'"));
+            let l=Number(prompt("Insira a altura do solido 'metros'"));
+            let re= 3.14*(r*r);
+            let ciro= re*l
+            alert("O volume do seu cilindro é "+ciro+"m³")
+            document.getElementById('lindo').innerHTML="seu cilindro vale "+ciro+"m³"
+        }
+        function PRIMA(){
+            let la=Number(prompt("Insira o lado da base 'metros'"));
+            let al=Number(prompt("Insira a altura do solido 'metros'"));
+            let ras= Math.sqrt(3)
+            let tri=(la*la)*ras/4;
+            let non= tri*al
+            alert("O volume do seu prisma é "+non+"m³")
+            document.getElementById('simas').innerHTML="seu prisma vale "+non+"m³"
+        }
+        
+
+    </script>
+</body>
+</html>
+    

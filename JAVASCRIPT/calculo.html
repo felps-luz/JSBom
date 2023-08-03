@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="Somar()">
+        Somar
+    </button>
+    
+    <button onclick="chamaMulti()">
+        Multiplicar
+    </button>
+
+    <button onclick="raíz()">
+        Raíz quadrada
+    </button>
+    
+    <script>
+       function Somar(){
+       let x=Number(prompt("insira um numero"));
+       let y=Number(prompt("bota mais um"));
+       let res=x+y;
+       alert("seu dia favorito é o dia "+res+" de setembro"  );
+       }
+       
+       function chamaMulti(){
+       let a=Number(prompt("insira um numero"));
+       let b=Number(prompt("bota mais um"));
+       alert("seu dia favorito é o dia "+Mult(a,b)+" de setembro"  );
+        
+       }
+
+       function Mult(a,b){
+       return a*b 
+       } 
+
+       function raíz(){
+       let f=Number(prompt("insira um numero"));
+       alert("a raiz quadrada do seu numero é "+mandioca(f) );
+        
+       }
+
+       function mandioca(f){
+        return Math.sqrt(f)
+    
+       }
+
+       
+       
+    </script>
+</body>
+</html>    
